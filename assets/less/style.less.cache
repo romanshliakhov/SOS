@@ -1,4 +1,4 @@
-a:4:{s:4:"root";s:24:"./assets/less/style.less";s:8:"compiled";s:24244:"html {
+a:4:{s:4:"root";s:24:"./assets/less/style.less";s:8:"compiled";s:26036:"html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
 }
@@ -922,7 +922,7 @@ h2 {
 }
 .sec1 {
   background-image: url(../img/sec1.jpg);
-  height: 960px;
+  min-height: 960px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -1031,4 +1031,86 @@ h2 {
   color: #fff;
   background-color: transparent;
 }
-";s:5:"files";a:2:{s:60:"D:\HTML\OSPanel\domains\localhost\SOS\assets\less\style.less";i:1609784155;s:64:"D:\HTML\OSPanel\domains\localhost\SOS\assets\less\normalize.less";i:1607966740;}s:7:"updated";i:1609784156;}
+.sec2 {
+  background-image: url(../img/sec2.jpg);
+  min-height: 960px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.sec2 .block-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 200px;
+}
+.sec2 .block-inner .block-text {
+  padding-left: 120px;
+  padding-top: 55px;
+}
+.sec2 .block-inner .block-text .t1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.sec2 .block-inner .block-text .t2 {
+  padding: 10px 0 70px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFF;
+  position: relative;
+}
+.sec2 .block-inner .block-text .t2::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  width: 711px;
+  bottom: 61px;
+}
+.sec2 .block-inner .block-text .text {
+  margin-left: 190px;
+  width: 374px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  word-spacing: 2px;
+}
+.sec2 .block-inner .block-text .text span {
+  font-weight: 700;
+}
+.sec2 .block-inner .block-text .text span:last-child {
+  font-weight: 400;
+  text-transform: underline;
+  border-bottom: 4px solid #FFB548;
+}
+.sec2 .block-inner .block-slider {
+  margin-left: 15px;
+}
+.sec2 .block-inner .block-slider img {
+  max-width: 502px;
+  max-height: 610px;
+}
+.sec3 {
+  background-image: url(../img/sec3.jpg);
+  height: 960px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -92px;
+}
+.sec4 {
+  background-image: url(../img/sec4.jpg);
+  height: 960px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+";s:5:"files";a:2:{s:60:"D:\HTML\OSPanel\domains\localhost\SOS\assets\less\style.less";i:1609863677;s:64:"D:\HTML\OSPanel\domains\localhost\SOS\assets\less\normalize.less";i:1607966740;}s:7:"updated";i:1609863679;}
