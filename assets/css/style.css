@@ -1113,3 +1113,122 @@ h2 {
   background-repeat: no-repeat;
   background-position: center;
 }
+.footer {
+  background-color: #000;
+  height: 233px;
+}
+.footer .footer-top {
+  padding: 15px 120px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.footer .footer-top .footer-logo {
+  padding-right: 10px;
+}
+.footer .footer-top .footer-logo img {
+  width: 90px;
+  height: 90px;
+}
+.footer .footer-top ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 41px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.footer .footer-top ul li a {
+  padding-left: 40px;
+}
+.footer .footer-top .socials ul {
+  padding-top: 40px;
+}
+.footer .footer-top .socials ul li .facebook {
+  width: 9px;
+  height: 19px;
+}
+.footer .footer-top .socials ul li .twitter {
+  width: 21px;
+  height: 16px;
+}
+.footer .footer-top .socials ul li .youtube {
+  width: 25px;
+  height: 18px;
+}
+.footer .footer-top .socials ul li .twitch {
+  width: 19px;
+  height: 18px;
+}
+.footer .footer-top .socials ul li+li {
+  padding-left: 56px;
+}
+.footer .footer-bot {
+  padding-top: 49px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+}
+.footer .footer-bot::before {
+  content: '';
+  position: absolute;
+  border-bottom: 0.873968px solid #FFFFFF;
+  opacity: 0.5;
+  width: 1197px;
+  top: 27px;
+  left: 120px;
+}
+.footer .footer-bot .copy {
+  padding-left: 124px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFF;
+  opacity: 0.5;
+}
+.footer .footer-bot ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 4px;
+  padding-right: 120px;
+}
+.footer .footer-bot ul li {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFF;
+}
+.footer .footer-bot ul li+li {
+  padding-left: 16px;
+  position: relative;
+}
+.footer .footer-bot ul li+li::before {
+  content: '';
+  position: absolute;
+  border-right: 1px solid #fff;
+  height: 10px;
+  top: 3px;
+  left: 6px;
+}

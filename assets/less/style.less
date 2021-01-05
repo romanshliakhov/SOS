@@ -310,6 +310,7 @@ h2 {
 
         .block-slider {
             margin-left: 15px;
+
             img {
                 max-width: 502px;
                 max-height: 610px;
@@ -318,11 +319,6 @@ h2 {
         }
 
     }
-
-
-
-
-
 }
 
 .sec3 {
@@ -340,4 +336,130 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.footer {
+    background-color: #000;
+    height: 233px;
+
+    .footer-top {
+        padding: 15px 120px 0;
+        .dflex;
+        .jbetween;
+        .vcenter;
+
+        .footer-logo {
+            padding-right: 10px;
+
+            img {
+                width: 90px;
+                height: 90px;
+            }
+        }       
+
+        ul {
+            .dflex;
+            .jbetween;
+            padding-top: 41px;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+
+            li {
+                a {
+                    padding-left: 40px; 
+                }
+            }
+        }
+
+        .socials {
+            ul {
+                padding-top: 40px;
+
+                li {                    
+                    .facebook {
+                        width: 9px;
+                        height: 19px;
+                    }
+
+                    .twitter {
+                        width: 21px;
+                        height: 16px;
+                    }
+
+                    .youtube {
+                        width: 25px;
+                        height: 18px;
+                    }
+
+                    .twitch {
+                        width: 19px;
+                        height: 18px;
+                    }
+                }
+
+                li+li {
+                    padding-left: 56px;
+                }
+            }
+        }
+    }
+
+    .footer-bot {
+        padding-top: 49px;
+        .dflex;
+        .jbetween;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            border-bottom: 0.873968px solid #FFFFFF;
+            opacity: 0.5;
+            width: 1197px;
+            top: 27px;
+            left: 120px;
+        }
+
+        .copy {
+            padding-left: 124px;
+            font-size: 14px;
+            line-height: 19px;
+            color: #FFF;
+            opacity: 0.5;
+        }
+
+        ul {
+            .dflex;
+            .jbetween;
+            padding-top: 4px;
+            padding-right: 120px;
+
+            li {
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 16px;
+                text-align: right;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: #FFF;
+            }
+
+            li+li {
+                padding-left: 16px;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    border-right: 1px solid #fff;
+                    height: 10px;
+                    top: 3px;
+                    left: 6px;
+                }
+            }
+        }
+    }
 }
