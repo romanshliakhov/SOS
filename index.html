@@ -28,19 +28,21 @@
 	<title>SOS</title>
 	<link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="assets/fonts/fonts.css">
+	<link rel="stylesheet" href="assets/css/jquery.formstyler.css" />
+	<link rel="stylesheet" href="assets/css/jquery.formstyler.theme.css" />
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 	<div class="wrapper">
 		<section class="sec1">
-			<div class="container">
-				<header class="header">
+			<header class="header">
+				<div class="container">
 					<div class="block">
 						<a class="block-logo" href="">
 							<img src="assets/img/logo.png" alt="logo">
 						</a>
-
+	
 						<ul class="block-nav">
 							<li><a href="">main</a></li>
 							<li><a href="">about</a></li>
@@ -48,17 +50,17 @@
 							<li><a href="">system requirements</a></li>
 							<li><a href="">quotes</a></li>
 						</ul>
-
+	
 						<div class="block-option">
-							<div class="block-lang">
+							<div class="block-select">
 								<select>
-									<option>eng</option>
-									<option>rus</option>
-									<option>fra</option>
-									<option>deu</option>
+									<option value="eng">eng</option>
+									<option value="rus">rus</option>
+									<option value="fra">fra</option>
+									<option value="deu">deu</option>
 								</select>
 							</div>
-
+	
 							<div class="block-console">
 								<a class="xbox" href="">
 									<img src="assets/img/xbox.svg" alt="Xbox Game Pass">
@@ -69,9 +71,11 @@
 							</div>
 						</div>
 					</div>
-				</header>
+				</div>				
+			</header>
 
-				<div class="block-info">
+			<div class="block-info">
+				<div class="container">
 					<h1>SURVIVE AT ALL COSTS</h1>
 					<h2>Experience new social battle royale game</h2>
 					<button>Buy on Steam <span>$14.99</span></button>
@@ -80,6 +84,7 @@
 					</a>
 				</div>
 			</div>
+
 		</section>
 
 		<section class="sec2">
@@ -227,6 +232,8 @@
 		</footer>
 	</div>
 
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="assets/js/jquery.formstyler.min.js"></script>
 	<script src="assets/js/main.js"></script>
 </body>
 

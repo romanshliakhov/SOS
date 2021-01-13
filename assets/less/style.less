@@ -120,20 +120,20 @@ h2 {
 }
 
 .sec1 {
-    background-image: url(../img/sec1.jpg);
-    min-height: 960px;
+    background-image: url(../img/sec1.jpg);   
+    min-height: 100vh; 
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
-    padding-top: 21px;
     position: relative;
 
-    .header {
+    .header {       
         .block {
             .dflex;
             justify-content: space-around;
             .vcenter;
             align-items: center;
+            padding-top: 21px;
 
             .block-logo {
                 padding-left: 32px;
@@ -167,8 +167,44 @@ h2 {
                 padding-top: 9px;
                 padding-right: 32px;
 
-                .block-lang {
+                .block-select {
                     padding-right: 30px;
+
+                    .jq-selectbox {
+
+                        .jq-selectbox__select {
+                            padding: 0;
+                            border: none;
+                            border-bottom-color: none;
+                            border-radius: 0;
+                            background: transparent;
+                            box-shadow: none;
+                            font-weight: 700;
+                            color: #fff;
+                            text-transform: uppercase;
+                            text-shadow: none;
+                        }
+
+                        .jq-selectbox__trigger {
+                            position: absolute;
+                            top: 0;
+                            right: -25px;
+                            width: 34px;
+                            height: 30px;
+                            opacity: 0.5;
+                            border-right: 0.873968px solid #FFFFFF;
+
+                            border-left: none;
+
+                            .jq-selectbox__trigger-arrow {
+                                border: none;
+                                background-image: url(../img/arrow.svg);
+                                background-repeat: no-repeat;
+                                width: 10px;
+                                height: 10px;
+                            }
+                        }
+                    }
                 }
 
                 .block-console {
@@ -177,14 +213,14 @@ h2 {
                     }
                 }
             }
-
-
         }
     }
 
     .block-info {
-        padding-top: 231px;
-        text-align: center;
+        .dflex;         
+        .vcenter; 
+        text-align: center;   
+        padding-top: 300px;             
 
         h1 {
             font-family: 'Bebas Neue', sans-serif;
@@ -231,7 +267,7 @@ h2 {
             position: absolute;
             left: 50%;
             transform: translateX(-54%);
-            bottom: 53px;
+            bottom: 54px;
             font-weight: bold;
             font-size: 12px;
             line-height: 22px;
@@ -244,7 +280,7 @@ h2 {
 
 .sec2 {
     background-image: url(../img/sec2.jpg);
-    min-height: 960px;
+    min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -323,7 +359,7 @@ h2 {
 
 .sec3 {
     background-image: url(../img/sec3.jpg);
-    height: 960px;
+    min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -332,7 +368,7 @@ h2 {
 
 .sec4 {
     background-image: url(../img/sec4.jpg);
-    height: 960px;
+    min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -355,7 +391,7 @@ h2 {
                 width: 90px;
                 height: 90px;
             }
-        }       
+        }
 
         ul {
             .dflex;
@@ -369,7 +405,7 @@ h2 {
 
             li {
                 a {
-                    padding-left: 40px; 
+                    padding-left: 40px;
                 }
             }
         }
@@ -378,7 +414,7 @@ h2 {
             ul {
                 padding-top: 40px;
 
-                li {                    
+                li {
                     .facebook {
                         width: 9px;
                         height: 19px;
