@@ -920,15 +920,20 @@ h1,
 h2 {
   margin: 0;
 }
-.sec1 {
-  background-image: url(../img/sec1.jpg);
+.header {
+  background-image: url(../img/main-bg.jpg);
   min-height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
-.sec1 .header .block {
+.header .header-top .block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -938,29 +943,29 @@ h2 {
   align-items: center;
   padding-top: 21px;
 }
-.sec1 .header .block .block-logo {
+.header .header-top .block .block-logo {
   padding-left: 32px;
 }
-.sec1 .header .block .block-logo img {
+.header .header-top .block .block-logo img {
   width: 55px;
   height: 55px;
 }
-.sec1 .header .block .block-nav {
+.header .header-top .block .block-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 5px;
 }
-.sec1 .header .block .block-nav li {
+.header .header-top .block .block-nav li {
   padding-right: 51px;
 }
-.sec1 .header .block .block-nav li a {
+.header .header-top .block .block-nav li a {
   font-weight: bold;
   font-size: 12px;
   line-height: 16px;
   text-transform: uppercase;
 }
-.sec1 .header .block .block-option {
+.header .header-top .block .block-option {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -973,10 +978,10 @@ h2 {
   padding-top: 9px;
   padding-right: 32px;
 }
-.sec1 .header .block .block-option .block-select {
+.header .header-top .block .block-option .block-select {
   padding-right: 30px;
 }
-.sec1 .header .block .block-option .block-select .jq-selectbox .jq-selectbox__select {
+.header .header-top .block .block-option .block-select .jq-selectbox .jq-selectbox__select {
   padding: 0;
   border: none;
   border-bottom-color: none;
@@ -988,7 +993,7 @@ h2 {
   text-transform: uppercase;
   text-shadow: none;
 }
-.sec1 .header .block .block-option .block-select .jq-selectbox .jq-selectbox__trigger {
+.header .header-top .block .block-option .block-select .jq-selectbox .jq-selectbox__trigger {
   position: absolute;
   top: 0;
   right: -25px;
@@ -998,27 +1003,21 @@ h2 {
   border-right: 0.873968px solid #FFFFFF;
   border-left: none;
 }
-.sec1 .header .block .block-option .block-select .jq-selectbox .jq-selectbox__trigger .jq-selectbox__trigger-arrow {
+.header .header-top .block .block-option .block-select .jq-selectbox .jq-selectbox__trigger .jq-selectbox__trigger-arrow {
   border: none;
   background-image: url(../img/arrow.svg);
   background-repeat: no-repeat;
   width: 10px;
   height: 10px;
 }
-.sec1 .header .block .block-option .block-console a {
+.header .header-top .block .block-option .block-console a {
   padding-left: 14px;
 }
-.sec1 .block-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.header .header-info {
+  margin-top: 228px;
   text-align: center;
-  padding-top: 300px;
 }
-.sec1 .block-info h1 {
+.header .header-info h1 {
   font-family: 'Bebas Neue', sans-serif;
   font-weight: 700;
   font-size: 80px;
@@ -1027,7 +1026,7 @@ h2 {
   text-transform: uppercase;
   color: #fff;
 }
-.sec1 .block-info h2 {
+.header .header-info h2 {
   padding-top: 4px;
   padding-bottom: 33px;
   font-family: 'Bebas Neue', sans-serif;
@@ -1037,7 +1036,7 @@ h2 {
   letter-spacing: 2px;
   color: #fff;
 }
-.sec1 .block-info button {
+.header .header-info button {
   padding: 19px 38px;
   font-weight: bold;
   font-size: 16px;
@@ -1046,12 +1045,12 @@ h2 {
   background: linear-gradient(194.68deg,#FFB548 11.27%,#F3AF34 90.4%);
   border-radius: 4px;
 }
-.sec1 .block-info button span {
+.header .header-info button span {
   padding-left: 10px;
   border-left: 0.873968px solid #1A1917;
   margin-left: 8px;
 }
-.sec1 .block-info a {
+.header .header-info a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1066,24 +1065,24 @@ h2 {
   color: #fff;
   background-color: transparent;
 }
-.sec2 {
-  background-image: url(../img/sec2.jpg);
+.about {
   min-height: 100vh;
+  padding: 18rem 0 14rem;
+  background-image: url(../img/about-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.sec2 .block-inner {
+.about .about-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 200px;
 }
-.sec2 .block-inner .block-text {
+.about .about-inner .about-info {
   padding-left: 120px;
   padding-top: 55px;
 }
-.sec2 .block-inner .block-text .t1 {
+.about .about-inner .about-info .about-title {
   font-family: 'Bebas Neue', sans-serif;
   font-weight: bold;
   font-size: 24px;
@@ -1091,7 +1090,7 @@ h2 {
   letter-spacing: 2px;
   color: #fff;
 }
-.sec2 .block-inner .block-text .t2 {
+.about .about-inner .about-info .about-subtitle {
   padding: 10px 0 70px;
   font-family: 'Bebas Neue', sans-serif;
   font-weight: bold;
@@ -1102,7 +1101,7 @@ h2 {
   color: #FFF;
   position: relative;
 }
-.sec2 .block-inner .block-text .t2::before {
+.about .about-inner .about-info .about-subtitle::before {
   content: '';
   position: absolute;
   border: 2px solid #fff;
@@ -1110,7 +1109,7 @@ h2 {
   width: 711px;
   bottom: 61px;
 }
-.sec2 .block-inner .block-text .text {
+.about .about-inner .about-info .about-descr {
   margin-left: 190px;
   width: 374px;
   font-size: 18px;
@@ -1118,38 +1117,352 @@ h2 {
   color: #fff;
   word-spacing: 2px;
 }
-.sec2 .block-inner .block-text .text span {
+.about .about-inner .about-info .about-descr span {
   font-weight: 700;
 }
-.sec2 .block-inner .block-text .text span:last-child {
+.about .about-inner .about-info .about-descr span:last-child {
   font-weight: 400;
   text-transform: underline;
   border-bottom: 4px solid #FFB548;
 }
-.sec2 .block-inner .block-slider {
+.about .about-inner .about-slider {
   margin-left: 15px;
 }
-.sec2 .block-inner .block-slider img {
+.about .about-inner .about-slider img {
   max-width: 502px;
   max-height: 610px;
 }
-.sec3 {
-  background-image: url(../img/sec3.jpg);
+.features {
   min-height: 100vh;
+  padding: 170px 0 200px;
+  background-image: url(../img/features-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: -92px;
 }
-.sec4 {
-  background-image: url(../img/sec4.jpg);
+.features .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.features .container .features-inner {
+  padding-right: 120px;
+}
+.features .container .features-inner .features-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+.features .container .features-inner .features-subtitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.features .container .features-inner .features-tabs {
+  min-width: 368px;
+  margin: 70px 0 0;
+}
+.features .container .features-inner .features-tabs .features-tab {
+  margin-bottom: 40px;
+}
+.features .container .features-inner .features-tabs .features-tab .features-tab_title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  letter-spacing: 2px;
+  color: #FFB548;
+  padding: 0 0 18px 45px;
+}
+.features .container .features-inner .features-tabs .features-tab .features-tab_descr {
+  padding-left: 45px;
+  display: none;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+  color: #FFFFFF;
+}
+.config {
+  background-image: url(../img/config-bg.jpg);
   min-height: 100vh;
+  padding: 145px 0 170px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+.config .config-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.config .config-subtitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 200px;
+}
+.config .config-inner {
+  padding: 0 120px;
+}
+.config .config-inner .grid-container {
+  max-width: 574px;
+  border: 1px solid rgba(151,151,151,0.3);
+  display: grid;
+  grid-template-columns: minmax(14rem,27.6rem) minmax(14rem,29.6rem);
+}
+.config .config-inner .grid-container .config-block {
+  padding: 15px 12px 30px 18px;
+  border: 1px solid rgba(151,151,151,0.3);
+}
+.config .config-inner .grid-container .config-block:last-child {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.config .config-inner .grid-container .config-block .config-block_title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #FFB548;
+}
+.config .config-inner .grid-container .config-block .config-block_descr {
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+.quotes {
+  min-height: 100vh;
+  padding: 16rem 0 14rem;
+  background-image: url(../img/quotes-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.quotes .quotes-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 120px;
+}
+.quotes .quotes-items .quotes-item {
+  flex-basis: 50%;
+}
+.quotes .quotes-items .quotes-item .quotes-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  padding-bottom: 20px;
+}
+.quotes .quotes-items .quotes-item .quotes-subtitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-bottom: 50px;
+}
+.quotes .quotes-items .quotes-item .quotes-text {
+  max-width: 435px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  padding-bottom: 50px;
+}
+.quotes .quotes-items .quotes-item a {
+  display: block;
+  width: 260px;
+  padding: 18px 34px 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #1A1917;
+  background: linear-gradient(194.68deg,#FFB548 11.27%,#F3AF34 90.4%);
+  border-radius: 4px;
+}
+.quotes .quotes-items .quotes-item .quotes-user {
+  padding: 15px 20px 21px 17px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 10px;
+  position: relative;
+  max-width: 454px;
+  margin-bottom: 30px;
+  margin-left: auto;
+}
+.quotes .quotes-items .quotes-item .quotes-user::after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/twitter.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 22px;
+  height: 18px;
+  opacity: 0.3;
+  top: 25px;
+  right: 18px;
+}
+.quotes .quotes-items .quotes-item .quotes-user:nth-of-type(2) {
+  margin-left: 50px;
+}
+.quotes .quotes-items .quotes-item .quotes-user:last-of-type {
+  margin-right: 20px;
+}
+.quotes .quotes-items .quotes-item .quotes-user .quotes-user_box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.quotes .quotes-items .quotes-item .quotes-user .quotes-user_box .quotes-user_avatar {
+  width: 70px;
+  height: 70px;
+  margin-right: 32px;
+  display: flex;
+  align-items: center;
+}
+.quotes .quotes-items .quotes-item .quotes-user .quotes-user_box .quotes-user_avatar img {
+  max-width: 63px;
+  max-height: 63px;
+  border-radius: 50%;
+}
+.quotes .quotes-items .quotes-item .quotes-user .quotes-user_box .quotes-user_name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #FFB548;
+  margin-bottom: 5px;
+}
+.quotes .quotes-items .quotes-item .quotes-user .quotes-user_box .quotes-user_status {
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+  color: #FFFFFF;
+  opacity: 0.5;
+}
+.quotes .quotes-items .quotes-item .quotes-user .quotes-user_feedback .quotes-user_text {
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+.quotes .quotes-items .quotes-item .quotes-user .quotes-user_feedback time {
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.subscribe {
+  background-color: #080A0B;
+  padding-top: 100px;
+}
+.subscribe .subscribe-inner {
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+}
+.subscribe .subscribe-inner .subscribe-bg {
+  width: 100%;
+  margin-right: 70px;
+  margin-left: 30px;
+}
+.subscribe .subscribe-inner .subscribe-block .subscribe-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+.subscribe .subscribe-inner .subscribe-block .subscribe-subtitle {
+  font-family: 'Bebas Neue', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 80px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 45px;
+}
+.subscribe .subscribe-inner .subscribe-block .subscribe-text {
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  margin-bottom: 55px;
+}
+.subscribe .subscribe-inner .subscribe-block form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.subscribe .subscribe-inner .subscribe-block form input {
+  padding: 18px 21px 18px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 5px;
+  margin-right: 18px;
+  height: 60px;
+  width: 365px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFB548;
+  border: none;
+}
+.subscribe .subscribe-inner .subscribe-block form button {
+  height: 59px;
+  width: 260px;
+  padding: 18px 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #1A1917;
+  background: linear-gradient(194.68deg,#FFB548 11.27%,#F3AF34 90.4%);
+  border-radius: 4px;
 }
 .footer {
-  background-color: #000;
+  background-color: #080A0B;
   height: 233px;
 }
 .footer .footer-top {
