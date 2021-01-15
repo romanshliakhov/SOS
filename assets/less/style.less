@@ -119,15 +119,16 @@ h2 {
     margin: 0;
 }
 
-.sec1 {
+.header {
     background-image: url(../img/sec1.jpg);   
     min-height: 100vh; 
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
-    position: relative;
+    background-position: bottom;    
+    .dflex;
+    .jcenter;
 
-    .header {       
+    .header-top {       
         .block {
             .dflex;
             justify-content: space-around;
@@ -216,11 +217,9 @@ h2 {
         }
     }
 
-    .block-info {
-        .dflex;         
-        .vcenter; 
-        text-align: center;   
-        padding-top: 300px;             
+    .header-info {   
+        margin-top: 228px;     
+        text-align: center;                      
 
         h1 {
             font-family: 'Bebas Neue', sans-serif;
@@ -278,22 +277,22 @@ h2 {
     }
 }
 
-.sec2 {
-    background-image: url(../img/sec2.jpg);
-    min-height: 100vh;
+.about {
+    min-height: 100vh;  
+    padding: 18=rem 0 14rem;         
+    background-image: url(../img/sec2.jpg);    
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
-    .block-inner {
-        .dflex;
-        padding-top: 200px;
+    .about-inner {
+        .dflex;               
 
-        .block-text {
+        .about-info {
             padding-left: 120px;
             padding-top: 55px;
 
-            .t1 {
+            .about-title {
                 font-family: 'Bebas Neue', sans-serif;
                 font-weight: bold;
                 font-size: 24px;
@@ -302,7 +301,7 @@ h2 {
                 color: #fff;
             }
 
-            .t2 {
+            .about-subtitle {
                 padding: 10px 0 70px;
                 font-family: 'Bebas Neue', sans-serif;
                 font-weight: bold;
@@ -323,7 +322,7 @@ h2 {
                 }
             }
 
-            .text {
+            .about-descr {
                 margin-left: 190px;
                 width: 374px;
                 font-size: 18px;
@@ -344,7 +343,7 @@ h2 {
 
         }
 
-        .block-slider {
+        .about-slider {
             margin-left: 15px;
 
             img {
@@ -357,21 +356,28 @@ h2 {
     }
 }
 
-.sec3 {
+.features {
     background-image: url(../img/sec3.jpg);
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    margin-top: -92px;
+    background-position: center;    
 }
 
-.sec4 {
+.config {
     background-image: url(../img/sec4.jpg);
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.quotes {
+
+}
+
+.subscribe {
+    
 }
 
 .footer {
