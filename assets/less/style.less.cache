@@ -1,4 +1,4 @@
-a:4:{s:4:"root";s:24:"./assets/less/style.less";s:8:"compiled";s:39796:"html {
+a:4:{s:4:"root";s:24:"./assets/less/style.less";s:8:"compiled";s:40334:"html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
 }
@@ -1196,8 +1196,24 @@ h2 {
   min-width: 368px;
   margin: 70px 0 0;
 }
+.features .container .features-inner .features-tabs .features-tab_active .features-tab_descr {
+  display: block;
+  background: transparent;
+}
 .features .container .features-inner .features-tabs .features-tab {
-  margin-bottom: 40px;
+  padding-bottom: 30px;
+  position: relative;
+  cursor: pointer;
+}
+.features .container .features-inner .features-tabs .features-tab::before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  left: 0;
+  top: 7px;
 }
 .features .container .features-inner .features-tabs .features-tab .features-tab_title {
   font-family: 'Bebas Neue', sans-serif;
@@ -1208,6 +1224,9 @@ h2 {
   color: #FFB548;
   padding: 0 0 18px 45px;
 }
+.features .container .features-inner .features-tabs .features-tab .features-tab_title:hover {
+  color: whitesmoke;
+}
 .features .container .features-inner .features-tabs .features-tab .features-tab_descr {
   padding-left: 45px;
   display: none;
@@ -1216,6 +1235,7 @@ h2 {
   line-height: 22px;
   text-align: justify;
   color: #FFFFFF;
+  max-width: 405px;
 }
 .config {
   background-image: url(../img/config-bg.jpg);
@@ -1684,4 +1704,4 @@ h2 {
   top: 3px;
   left: 6px;
 }
-";s:5:"files";a:2:{s:60:"D:\HTML\OSPanel\domains\localhost\SOS\assets\less\style.less";i:1610898815;s:64:"D:\HTML\OSPanel\domains\localhost\SOS\assets\less\normalize.less";i:1607966740;}s:7:"updated";i:1610898820;}
+";s:5:"files";a:2:{s:60:"D:\HTML\OSPanel\domains\localhost\SOS\assets\less\style.less";i:1611072754;s:64:"D:\HTML\OSPanel\domains\localhost\SOS\assets\less\normalize.less";i:1607966740;}s:7:"updated";i:1611072953;}
